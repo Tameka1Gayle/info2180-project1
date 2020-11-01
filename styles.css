@@ -1,0 +1,252 @@
+//* Add your CSS to this file */
+body {
+	grid-template-columns: auto;
+    grid-template-rows: 100px 3000px 400px ;
+    grid-template-areas: "header" "main" "footer" ;
+    margin: 0;
+    font-size: 16px;
+    
+}
+header{
+    grid-area: "header";
+}
+main{
+    grid-area: "main";
+}
+footer{
+    grid-area: "footer";
+}
+main{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 350px 700px 250px 700px 150px;
+    grid-template-areas: "row1" "row2" "row3" "row4" "row5";
+}
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
+}
+
+/*IMAGES*/
+img[src = "MW.jpg"]{
+  	background-repeat: no-repeat;
+    border-radius: 25%;
+    padding: 30px;
+    width: 300px;
+    height: 250px;
+    margin: 20px;
+}
+img[src = "AI.png"]{
+    border-radius: 25%;
+    padding: 30px;
+    width: 200px;
+    height: 150px;
+}
+img[src = "FT.png"]{
+    border-radius: 25%;
+    padding: 30px;
+    width: 200px;
+    height: 150px;
+}
+img[src = "HL.png"]{
+    border-radius: 25%;
+    padding: 30px;
+    width: 200px;
+    height: 150px;
+}
+img[src = "minister.jpg"]{
+    border-radius: 50%;
+    padding: 30px;
+    width: 300px;
+    height: 250px;
+}
+img[src = "covid.jpg"]{
+    border-radius: 50%;
+    padding: 30px;
+    width: 300px;
+    height: 250px;
+}
+
+/*HEADER*/
+header >.container{
+    grid-area: "header";
+    text-align: left;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff; 
+    font-size: 18px;
+
+
+}
+header h1{
+    float: left;
+}
+nav{
+    
+    float: right;
+}
+ul li {
+    list-style-type: none;
+    display: inline;
+    margin: 0;
+    padding: 6px;
+    overflow: hidden;
+    float: right;
+}
+ul li a{
+    text-decoration: none;
+    color: #6b7280;
+}
+ul li a:hover{
+    color: #5a67d8;
+}
+
+*OVERVIEW-HERO*/
+.overview-hero >.container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.overview-hero-image{
+    float: left;
+}
+.overview-hero{
+    display: block;
+    grid-area: "row1";
+    background-color: #e2e8f0;
+}
+
+/*LEARN-ABOUT*/
+.learn-about{
+    grid-area: "row2";
+}
+.learn-about h2{
+    font-size: 24px;
+    color: #48bb78;
+}
+.learn-about .cards{
+    display: grid;
+    grid-column-start: auto;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 20px; 
+}
+.learn-about .card{
+    border-color: #e2e8f0;
+    box-shadow: #676d79;
+    border-radius: 5px;
+    box-shadow: 3px 2px 3px 2px;
+    margin: 2px;
+}
+.learn-about .card h3{
+    color: #48bb78;
+    padding: 5px;
+    font-size: 24px;
+}
+.learn-about .card p{
+    color: #4a5568;
+    padding: 5px;
+    font-size: 20px;
+}
+
+/*TESTING*/
+.testing{
+    grid-area: "row3";
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    background-color: #4a5568;
+    color: #ffffff;
+}
+
+.testing >.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.testing-desciption{
+    float: left;
+    margin: auto 0;
+    width: 60%;
+}
+.cta {
+    text-align: center;
+    padding: 10px;
+    margin: auto 0 auto 0;
+    width: fit-content;
+    height: fit-content;
+}
+.cta .btn{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #48bb78;
+    border-radius: 5px;
+    padding: 10px 20px;
+} 
+
+/*STORIES*/
+.stories{
+    grid-area: "row4";
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.stories img{
+    float: left;
+    border-radius: 50%;
+    padding: 10px;
+}
+.stories >.container{
+    display: grid;
+    grid-column-start: auto;
+    grid-template-columns: 800px;
+    grid-template-rows: 10px 300px;
+    grid-gap: 50px; 
+}
+.stories .h2{
+    color: #5a67d8;
+}
+.stories .a{
+    color: #5a67d8;
+}
+.stories .h3{
+    font-size: 18px;
+}
+
+/*NEWSLETTER*/
+.newsletter{
+    grid-area: "row5";
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #48bb78;
+}
+form{
+    display: inline;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.form-group{
+    text-align: center;
+    color: black;
+    justify-content: space-around;
+}
+form .btn{
+    text-align: center;
+    color: black;
+    justify-content: space-around;
+    background-color: #5a67d8;
+    margin-left: 10px;
+}
+
+/*FOOTER*/
+footer{
+    grid-area: "footer";
+    background-color: #4a5568;
+    color: #ffffff;
+    text-align: left;
+    padding: 10px;
+    
+}
