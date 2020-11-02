@@ -30,6 +30,7 @@ main{
 
 /*IMAGES*/
 img[src = "MW.jpg"]{
+	background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fbeautiful-woman-cartoon-meditate_5408181.htm&psig=AOvVaw2rwE6AvQnYJrI7gGNoZcUa&ust=1604351389097000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKj18PaU4uwCFQAAAAAdAAAAABAD');
   	background-repeat: no-repeat;
     border-radius: 25%;
     padding: 30px;
@@ -68,7 +69,7 @@ img[src = "covid.jpg"]{
     height: 250px;
 }
 
-/*HEADER*/
+
 header >.container{
     grid-area: "header";
     text-align: left;
@@ -103,7 +104,6 @@ ul li a:hover{
     color: #5a67d8;
 }
 
-*OVERVIEW-HERO*/
 .overview-hero >.container{
     display:flex;
     justify-content: space-between;
@@ -118,7 +118,6 @@ ul li a:hover{
     background-color: #e2e8f0;
 }
 
-/*LEARN-ABOUT*/
 .learn-about{
     grid-area: "row2";
 }
@@ -130,13 +129,13 @@ ul li a:hover{
     display: grid;
     grid-column-start: auto;
     grid-template-columns: 300px 300px 300px;
-    grid-gap: 20px; 
+    grid-gap: 30px; 
 }
 .learn-about .card{
     border-color: #e2e8f0;
     box-shadow: #676d79;
     border-radius: 5px;
-    box-shadow: 3px 2px 3px 2px;
+    box-shadow: 2px 2px 2px 2px;
     margin: 2px;
 }
 .learn-about .card h3{
@@ -150,7 +149,6 @@ ul li a:hover{
     font-size: 20px;
 }
 
-/*TESTING*/
 .testing{
     grid-area: "row3";
     display: flex;
@@ -185,7 +183,6 @@ ul li a:hover{
     padding: 10px 20px;
 } 
 
-/*STORIES*/
 .stories{
     grid-area: "row4";
     display: flex;
@@ -214,7 +211,6 @@ ul li a:hover{
     font-size: 18px;
 }
 
-/*NEWSLETTER*/
 .newsletter{
     grid-area: "row5";
     text-align: center;
@@ -241,7 +237,6 @@ form .btn{
     margin-left: 10px;
 }
 
-/*FOOTER*/
 footer{
     grid-area: "footer";
     background-color: #4a5568;
